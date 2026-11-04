@@ -53,7 +53,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import families  # noqa: E402
 
 ROCM_INDEX_URL = "https://nightly.repo.amd.com/rocm/core/tarball/"
-LLAMACPP_REPO = "https://github.com/ggml-org/llama.cpp.git"
+LLAMACPP_REPO = "https://github.com/achyudh/llama.cpp.git"
 
 KNOWN_OSES = ("windows", "ubuntu")
 # TheRock names its tarballs by platform, not by distribution.

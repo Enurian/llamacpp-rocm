@@ -179,7 +179,7 @@ jobs:
         $commit = $env:PINNED_LLAMACPP_SHA
         Write-Host "Cloning llama.cpp at $commit with blobless clone"
         for ($attempt = 1; $attempt -le 5; $attempt++) {
-          git clone --filter=blob:none --no-checkout https://github.com/achyudh/llama.cpp.git
+          git clone --filter=blob:none --no-checkout https://github.com/Enurian/llama.cpp.git
           if ($LASTEXITCODE -eq 0) { break }
           if ($attempt -eq 5) { throw "git clone failed with exit code $LASTEXITCODE after 5 attempts" }
           Write-Host "git clone failed (attempt $attempt/5); retrying in $(15 * $attempt)s..."
